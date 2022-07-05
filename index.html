@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloWorld</title>
+</head>
+
+<body>
+  <h1>HelloWorld Page</h1>
+  <p id="hello">Hello World, Privacy-Preserving Tech!</p>
+  <p id="zkp">I am facinated of ZKP!</p>
+  <p id="mpc">I am facinated of MPC!</p>
+
+  <button type="button" onclick="window.alert('hellojs')">hello</button>
+  <button type="button" onclick="say_hello()">say</button>
+
+  <script>
+    function just_add(x, y) {
+      var addxy = x + y
+      document.writeln(`<p id='add'>x + y = ${addxy}<\p>`)
+    }
+
+    function say_hello() {
+      document.getElementById("hello").innerHTML = document.getElementById("hello").innerHTML + "<br>Welcome fresh to Cryptography!";
+    }
+
+    just_add(1,200);
+  </script>
+</body>
+
+</html>
